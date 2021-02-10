@@ -20,35 +20,38 @@
         <div class="choose-type">
             <p>CHOOSE TYPE</p>
             <div class="container">
-                <div class="box1">
-                    <div class="image1">
-                    </div>Length
+                <div id="b1" class="box1">
+                    <img>
+                    <div id="length">Length</div>
                 </div>
-                <div class="box2">Temperature</div>
-                <div class="box3">Valume</div>
+                <div id="b2" class="box2">
+                    <img>
+                    <div id="temperature">Temperature</div>
+                </div>
+                <div class="box3">
+                    <img src="../assets/beaker.svg">Valume
+                </div>
             </div>
         </div>
     </div>
     <div class="form-content">
         <div class="from">
             <div>FROM</div>
+            <form class="form-input">
+                <input type="number" class="section1" name="number1" id="section1">
+                <select class="convert1" name="select" id="convert1">
+                </select>
+            </form>
         </div>
-        <form class="input">
-            <input type="number" class="select" name="number1" id="section1">
-            <select>
-                <option value="Celsius">Celsius</option>
-
-            </select>
-        </form>
-        <div class="to">
-            <div>TO</div>
+            <div class="to">
+                <div>TO</div>
+                <form class="form-input">
+                    <input type="number" class="section2" name="number2" id="section2">
+                    <select class="convert2" name="select" id="convert2">
+                    </select>
+                </form>
+            </div>
         </div>
-        <form class="input2">
-            <input type="number" class="select2" name="number2" id="section2">
-            <select>
-                <option value="fahrenheit">Fehrenheit</option>
-            </select>
-        </form>
     </div>
 </body>
 

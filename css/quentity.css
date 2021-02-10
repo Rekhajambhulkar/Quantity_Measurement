@@ -23,6 +23,7 @@ body {
     font-size: 22px;
     opacity: 1;
 }
+
 .History{
     font-size: 16px;
     align-items:baseline;
@@ -32,8 +33,7 @@ body {
     opacity: 1;
 }
 
-.form-head{
-    
+.form-head{   
     font-size: 25px;
     font-weight: 100;
     padding: 20px 0;
@@ -44,6 +44,7 @@ body {
     opacity: 1;
     background-color: #446DFF;
 }
+
 .row-content {
     background-color: #f1f3fc;
     display: flex;
@@ -82,9 +83,9 @@ body {
     height: 137px;
     width: 173px;
     display: flex;
-    background: #EDFDF9 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
-    border: 1px solid #0EC098;
+    border: 1px solid #FFFFFF;
     border-radius: 7px;
     align-items: center;
     justify-content: center;
@@ -92,10 +93,12 @@ body {
     opacity: 1;
 }
 
-.image1{
-    background-image: url(../assets/beaker.svg);
-    position: left;
-    padding: ;
+.box1 img{
+    content: url(../assets/scale.svg);
+}
+
+.box1:hover img{
+    content: url(../assets/scale.svg);
 }
 
 .box1:hover {
@@ -120,6 +123,14 @@ body {
     align-items: center;
 }
 
+.box2 img{
+    content: url(../assets/hot.svg);
+}
+
+.box2:hover img{
+    content: url(../assets/hot.svg);
+}
+
 .box2:hover {
     background: #FFEEF0 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -128,6 +139,7 @@ body {
     font-size: 17px;
     text-transform: capitalize;
 }
+
 .container .box3{
     width: 173px;
     height: 137px;
@@ -141,6 +153,10 @@ body {
     align-items: center;
 }
 
+.box3:hover img{
+    content: url(../assets/beaker.svg);
+}
+
 .box3:hover {
     background:#E8DDFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -151,6 +167,7 @@ body {
 }
 
 .form-content{
+    background-color: #f1f3fc;
     width: 48%;
     margin: 0 auto;
     display: flex;
@@ -170,24 +187,36 @@ body {
     flex-grow: 1;
 }
 
-.form-content .form{
+.section1{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.section2{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.convert1{
+    padding: 3px;
+}
+
+.convert2{
+    padding: 3px;
+}
+
+.form-content form{
     display: flex;
     flex-direction: column;
     border: 1px solid #E7DCFE;
 }
 
-.input input{
+.form-input select{
+    border: 1px solid #7c7272;
+}
+
+.form-input input{
     border: 1px solid #ffffff;
-}
-
-.input select{
-    border: 1px solid #ffffff;
-}
-
-.input .input2{
-    border: solid #E7DCFE;
-}
-
-.input2 .select{
-    border: 1px solid #E7DCFE;
 }
