@@ -3,19 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/quentity.css">
     <title>Quentity Measurement</title>
 </head>
 
-<body>
+<body onload="onLoad()">
     <div class="header">
         <div class="Quanment">Quanment</div>
         <div class="History">History</div>
     </div>
-    <div class="form-head"> Welcome to Quantity Measurement</div>
+    <div class="form-head">
+        Welcome to Quantity Measurement
+    </div>
     <div class="row-content">
         <div class="choose-type">
             <p>CHOOSE TYPE</p>
@@ -28,31 +30,34 @@
                     <img>
                     <div id="temperature">Temperature</div>
                 </div>
-                <div class="box3">
-                    <img src="../assets/beaker.svg">Valume
+                <div id="b3" class="box3">
+                    <img>
+                    <div id="volume">Volume</div>
                 </div>
+
             </div>
         </div>
-    </div>
-    <div class="form-content">
-        <div class="from">
-            <div>FROM</div>
-            <form class="form-input">
-                <input type="number" class="section1" name="number1" id="section1">
-                <select class="convert1" name="select" id="convert1">
-                </select>
-            </form>
-        </div>
+        <div class="form-content">
+            <div class="from">
+                <div>FROM</div>
+                <form class="form-input">
+                    <input type="number" class="section1" name="number1" id="section1">
+                    <select class="convert1" name="select" id="convert1" onchange="myLengthResult()">
+                    </select>
+                </form>
+            </div>
             <div class="to">
                 <div>TO</div>
                 <form class="form-input">
                     <input type="number" class="section2" name="number2" id="section2">
-                    <select class="convert2" name="select" id="convert2">
+                    <select class="convert2" name="select" id="convert2" onchange="myLengthResult()">
                     </select>
                 </form>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../js/quantity.js"></script>
 </body>
-
 </html>
